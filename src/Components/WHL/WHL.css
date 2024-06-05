@@ -1,0 +1,48 @@
+.container-whl{
+    margin: 0;
+    display: flex;
+    padding :0.5rem;
+    justify-content: space-around;
+}
+
+.box-WHL{
+    width: 45%;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-WHL b{
+    font-size: 3rem;
+}
+
+.clear-history-btn{
+    color: grey;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.clear-history-btn:hover{
+    color: white;
+
+}
+
+.rightside-whl h1{
+   text-decoration: underline;
+   color: white;
+}
+
+.leftside-whl{
+    background-color: rgba(0,0,0,0.153);
+    height: 50vh;
+
+}
+
+.whl-list{
+    overflow-y: auto;
+
+}

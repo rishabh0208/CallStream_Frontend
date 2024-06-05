@@ -1,0 +1,98 @@
+.container-leftsidebar{
+    background-color: rgb(48, 48, 48);
+    width: 4.9rem;
+    height: calc(100vh);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.icon-sidebar-div{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.858);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.icon-sidebar{
+    margin: auto;
+}
+
+.text-sidebar-icon{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.86rem;
+    padding: 0.2rem;
+
+}
+
+.icon-sidebar-div:hover,
+.icon-sidebar-div.active
+{
+     color: aliceblue;
+     background-color: rgb(68,68,68);
+}
+
+/** drawer sidebar  */
+
+.container-drawerleftsidebar{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    z-index: 500;
+}
+
+.container2-drawerleftsidebar{
+    height: calc(100vh-3.6rem);
+    background-color: rgb(28,28,28);
+    width: 15rem;
+  overflow-y: auto;
+}
+
+.drawer-leftsidebar,
+.librarybtn-drawerleftsidebar{
+    padding-top: 0.5rem;
+    border-bottom: 2px solid rgb(128,128,128,0.293);
+}
+
+.icon-sidebar-div p{
+    display: flex;
+    margin: 0;
+}
+
+.subscriptions-lsdbar{
+    color: white;
+}
+
+.subscriptions-lsdbar h3{
+    text-decoration: underline;
+    margin: 20px 10px;
+
+}
+.channel-lsdbar {
+    display: flex;
+    cursor: pointer;
+}
+.channel-lsdbar:hover{
+    color: rgb(77,77,243);
+}
+.channel-lsdbar p{
+    border: 1px solid;
+    background-color: grey;
+    padding: 0.5rem;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+.channel-lsdbar div{
+    margin: auto;
+    width: 60%;
+}
+
+.container3-drawerleftsidebar{
+    flex-grow: 1;
+    background-color: rgba(0,0,0,0.488);
+}
+
+

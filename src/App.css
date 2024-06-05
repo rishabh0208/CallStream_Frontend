@@ -1,0 +1,46 @@
+.Chanel-logo-app{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 100%;
+    background-color: rgb(224,227,214);
+    display: flex;
+    margin: auto;
+}
+
+.fstChar-logo-app{
+  margin: auto;
+  color: black;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container-pages-app{
+    display: flex;
+    background-color: rgb(19,19,19);
+}
+
+.container2-pages-app{
+    width: calc(100vw);
+    height: calc(100vh-3.65rem);
+    border-top:2px solid rgb(128,128,128,0.45) ;
+    overflow-y: auto;
+}
+
+.video-box{
+   width: 21rem; 
+   height: 17rem;
+   margin-bottom: 1rem;
+   border: 2px solid transparent;
+}
+
+video{
+    background-color: rgba(8,8,8,0.662);
+}
+
+.dot{
+   height: 4px;
+   width: 4px;
+   border-radius: 100%;
+   background-color: white;
+   margin: auto 0.5rem;  
+}
