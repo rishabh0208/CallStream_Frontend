@@ -51,8 +51,8 @@ function VideoPage() {
         <div className="container2-videopage">
             <div className="video-display-screen-videopage">
                 <video 
-                 src={`http://localhost:5500/${vv?.filePath}`}
-                // src={`https://ytbackend-u14j.onrender.com/${vv?.filePath}`} 
+                // src={`http://localhost:5500/${vv?.filePath}`}
+                 src={`https://ytbackend-u14j.onrender.com/${vv?.filePath}`} 
                  className={'video-showvideo-videopage'}
                controls
                autoPlay
