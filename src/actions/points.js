@@ -11,3 +11,15 @@ export const addpoints=(id)=>async(dispatch)=>{
        }
 }
 
+
+// export const fetchUser = (id) => async (dispatch) => {
+//   try {
+//     const { data } = await api.fetchUser(id);
+//     dispatch({ type: 'FETCH_USER', payload: data });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+
+

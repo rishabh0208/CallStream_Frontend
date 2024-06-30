@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineHome} from "react-icons/ai"
-import {MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary} from "react-icons/md"
+import {MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary, MdVideoCall} from "react-icons/md"
 import './LeftSideBar.css'
 import {NavLink} from 'react-router-dom';
 import shorts from './shorts-logo.png'
@@ -28,6 +28,10 @@ const LeftSideBar = () => {
        <NavLink to={'/library'} className='icon-sidebar-div'>
         <MdOutlineVideoLibrary size={22} className="icon-sidebar" />
         <div className="text-sidebar-icon">Library</div>
+       </NavLink>
+       <NavLink to={'/videocall'} className='icon-sidebar-div'>
+        <MdVideoCall size={22} className="icon-sidebar" />
+        <div className="text-sidebar-icon">Videocall</div>
        </NavLink>
     </div>
   )

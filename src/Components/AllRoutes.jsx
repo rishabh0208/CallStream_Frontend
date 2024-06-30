@@ -9,6 +9,8 @@ import LikedVideos from '../Pages/LikedVideos/LikedVideos' ;
 import VideoPage from '../Pages/VideoPage/VideoPage';
 import Channel from '../Pages/Channel/Channel';
 import Search from '../Pages/Search/Search';
+import LobbyScreen from '../videocall/info';
+import RoomPage from '../videocall/backend';
 
 function AllRoutes  ({ setEditCreateChannelBtn,setVidUploadPage})  {
   return (
@@ -21,6 +23,8 @@ function AllRoutes  ({ setEditCreateChannelBtn,setVidUploadPage})  {
         <Route path='/likedvideos' element={ <LikedVideos/>} />
         <Route path='/videopage/:vid' element={ <VideoPage/>} />
         <Route path='/search/:searchQuery' element={ <Search/>} />
+        <Route path='/videocall' element={<LobbyScreen/>} />
+        <Route path="/room/:roomId" element={<RoomPage />} />
         <Route path='/channel/:cid' element={ <Channel 
         setVidUploadPage={setVidUploadPage}
         setEditCreateChannelBtn={ setEditCreateChannelBtn}/>} />

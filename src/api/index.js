@@ -1,7 +1,7 @@
 import axios from "axios";
 
-//const API = axios.create({ baseURL: `http://localhost:5500/` });
-const API = axios.create({ baseURL: `https://ytbackend-u14j.onrender.com/` });
+const API = axios.create({ baseURL: `http://localhost:5500/` });
+//const API = axios.create({ baseURL: `https://ytbackend-u14j.onrender.com/` });
 
 API.interceptors.request.use(req => {
   if (localStorage.getItem('Profile')) {
@@ -13,8 +13,8 @@ API.interceptors.request.use(req => {
 });
 
 export const login = (authData) => API.post('/user/login', authData);
-export const updateChannelData =async(id,updateData)=> await axios.patch(`https://ytbackend-u14j.onrender.com/user/update/${id}`, updateData);
-//export const updateChannelData =async(id,updateData)=> await axios.patch(`http://localhost:5500/user/update/${id}`, updateData);
+//export const updateChannelData =async(id,updateData)=> await axios.patch(`https://ytbackend-u14j.onrender.com/user/update/${id}`, updateData);
+export const updateChannelData =async(id,updateData)=> await axios.patch(`http://localhost:5500/user/update/${id}`, updateData);
 export const fetchAllChannel=()=>API.get('/user/getAllChannels')
 
 export const uploadVideo = (fileData, fileOptions) => API.post('/video/uploadVideo', fileData, fileOptions);
@@ -40,3 +40,5 @@ export const editComment=(id,commentBody)=> API.patch(`/comment/edit/${id}`,{com
 export const getAllComment=()=> API.get('/comment/get');
 
 export const addpoints=(id)=>API.post('/user/points',{id});
+
+// export const fetchUser = (id) => axios.get(`http://localhost:5500/user/${id}`);

@@ -1,0 +1,38 @@
+.join_button{
+  background-color: blue;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  color: white;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.join_button:hover{
+    border: 2px solid ;
+    color: rgb(231,140,14);
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.videocall_page h1{
+    color: antiquewhite;
+}
+
+.videocall_page label{
+    color:aqua;
+}
+
+.Stream_page h1{
+    color:antiquewhite;
+}
+
+.Stream_page h4{
+    color:aquamarine;
+}
+
+.Stream_page h5{
+    color:aquamarine;
+}
