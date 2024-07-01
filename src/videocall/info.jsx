@@ -19,10 +19,10 @@ const LobbyScreen = () => {
   const handleSubmitForm = useCallback(
     (e) => {
       e.preventDefault();
-      // if (!isWithinAllowedTime()) {
-      //   alert("Please come after 6 PM and before 12 AM to join videocall");
-      //   return;
-      // }
+      if (!isWithinAllowedTime()) {
+        alert("Please come after 6 PM and before 12 AM to join videocall");
+        return;
+      }
       socket.emit("room:join", { email, room });
     },
     [email, room, socket]

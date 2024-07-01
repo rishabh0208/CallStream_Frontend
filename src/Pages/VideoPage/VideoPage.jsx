@@ -172,7 +172,7 @@ const VideoPage = () => {
         let gestureType;
   
         if (newCount === 1) {
-          if (x >= window.innerWidth * 0.75 && y < window.innerHeight * 0.50) {
+          if (x >= window.innerWidth * 0.60 && y < window.innerHeight * 0.50) {
             gestureType = 'topright';
           } else {
             gestureType = 'center';
