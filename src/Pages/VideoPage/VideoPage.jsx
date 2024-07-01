@@ -68,7 +68,7 @@ const VideoPage = () => {
   };
 
   const handleGesture = useCallback((gestureType, clickCount) => {
-    console.log("Gesture detected:", gestureType, "Click count:", clickCount); // Debugging statement
+    console.log("Gesture detected:", gestureType, "Click count:", clickCount); 
 
     switch (clickCount) {
       case 1:
